@@ -1,0 +1,36 @@
+{
+  "name": "SVB/CBS2",
+  "description": "...",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Martin Beckmann",
+      "email": "abstractionsnicecream@gmail.com"
+    }
+  ],
+
+  "require": {
+    "klaussilveira/neo4j-ogm-bundle": "1.0",
+    "oldsound/rabbitmq-bundle": "~1.6",
+    "seven/symfony-rpc-bundle": "dev-master"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "SVB\\": "src/SVB",
+      "SVB\\CBS\\": "src/SVB/CBS",
+
+      "SVB\\CBS\\API\\": "src/SVB/CBS/API",
+      "SVB\\CBS\\API\\Handler\\": "src/SVB/CBS/API/Handler",
+
+      "SVB\\CBS\\Model\\": "src/SVB/CBS/Model",
+      "SVB\\CBS\\Model\\TranslationDomain\\": "src/SVB/CBS/Model/TranslationDomain",
+      "SVB\\CBS\\Model\\TranslationDomain\\ShippingCoDomain\\": "src/SVB/CBS/Model/TranslationDomain/ShippingCoDomain",
+
+      "SVB\\Framework\\": "src/SVB/Framework"
+
+    }
+  }
+
+}
